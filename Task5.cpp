@@ -8,6 +8,7 @@ int xsize = 20;
 int ysize = 18;
 int gameOver = 1;
 bool update = true;
+string O ;
 
 int main() {
 	srand((unsigned) time(0));
@@ -86,11 +87,19 @@ int main() {
 		cout<<"Game Over"<<endl;
 		cout<<"btw that means you lost the game ";
 		system("pause");
+		cout<<"Oyunu Begendiniz mi?"<<endl;
+		cin>>O;
+		cout<<"Napim"<<endl;
+		cin>>O;
 	}
 	if(gameOver == 2){
 		system("cls");
 		cout<<"     YOU WIN"<<endl;
 		system("pause");
+		cout<<"Oyunu Begendiniz mi?"<<endl;
+		cin>>O;
+		cout<<"Napim"<<endl;
+		cin>>O;
 	}
 	
 	return 0;
