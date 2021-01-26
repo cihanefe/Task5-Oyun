@@ -12,8 +12,8 @@ string O ;
 
 int main() {
 	srand((unsigned) time(0));
-	int playerx = rand() % xsize-1 + 2;
-	int playery = rand() % ysize-1 + 2;
+	int playerx = rand() % xsize-5 + 5;
+	int playery = rand() % ysize-5 + 5;
 	int boxX = rand() % 15 + 5;
 	int boxY = rand() % 13 + 5;
 	
@@ -22,7 +22,7 @@ int main() {
 			gameOver = 0;
 			update = false;
 		}
-		if (boxX > xsize || boxX < 0 || boxY > ysize || boxY < 0){  //Duvara çarpma
+		if (boxX >= xsize || boxX <= 0 || boxY >= ysize || boxY <= 0){  //Duvara çarpma
 			gameOver = 2;
 			update = false;
 		}
@@ -85,7 +85,7 @@ int main() {
 		system("cls");
 		cout<<" Ouch! You hit a wall"<<endl;
 		cout<<"Game Over"<<endl;
-		cout<<"btw that means you lost the game ";
+		cout<<"btw that means you lost the game "<<endl;
 		system("pause");
 		cout<<"Oyunu Begendiniz mi?"<<endl;
 		cin>>O;
