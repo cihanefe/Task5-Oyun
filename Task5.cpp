@@ -85,10 +85,12 @@ int main() {
 		cout<<" Ouch! You hit a wall"<<endl;
 		cout<<"Game Over"<<endl;
 		cout<<"btw that means you lost the game ";
+		system("pause");
 	}
 	if(gameOver == 2){
 		system("cls");
 		cout<<"     YOU WIN"<<endl;
+		system("pause");
 	}
 	
 	return 0;
